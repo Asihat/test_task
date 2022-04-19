@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/information_call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/callerIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/caller_id"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:text="@string/in_number"
+        app:layout_constraintStart_toStartOf="@+id/callerIdTextView"
+        app:layout_constraintTop_toBottomOf="@+id/callerIdTextView" />
+
+    <TextView
+        android:id="@+id/inDatetimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/in_datetime"
+        app:layout_constraintStart_toStartOf="@+id/numberTextView"
+        app:layout_constraintTop_toBottomOf="@+id/numberTextView" />
+
+    <TextView
+        android:id="@+id/pickupDateTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pickup_datetime"
+        app:layout_constraintStart_toStartOf="@+id/inDatetimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/inDatetimeTextView" />
+
+    <TextView
+        android:id="@+id/outDatetimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/out_datetime"
+        app:layout_constraintStart_toStartOf="@+id/pickupDateTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/pickupDateTimeTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

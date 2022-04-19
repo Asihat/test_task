@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="caller_id">caller_id:</string>
+    <string name="in_number">in_number:</string>
+    <string name="in_datetime">in_datetime:</string>
+    <string name="pickup_datetime">pickup_datetime:</string>
+    <string name="out_datetime">out_datetime:</string>
+    <string name="information_call">Информация звонка:</string>
+    <string name="concat_twoString">%1s %2s</string>
+</resources>
